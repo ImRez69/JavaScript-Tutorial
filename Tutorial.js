@@ -14,7 +14,6 @@
 //    --edit tag
 //    --delete tag
 
-
 // Part 2 -------------------------------------------------------
 
 //   JavaScript  ( JS ) vs ECMAScript  ( ES )
@@ -78,7 +77,6 @@
 //     ------------
 
 // Part 6 & 7 -------------------------------------------------------
-
 
 //     ------------------ Var , Let , Const ( Variable )
 
@@ -2775,3 +2773,55 @@
 // form.addEventListener("submit", onSubmit);
 
 // Part 56  -------------------------------------------------------
+
+// Event Bubbling | e.stopPropagation()
+
+// به این معنی است که "ایونت" اعمال شده روی یک "المان" روی تمامی "پرنت" هایش نیز اعمال میشود
+// اگر دکمه کلیک بشود در واقع "پرنت" آن نیز کلیک شده و است و این روی تمامی "پرنت" ها تا خود "داکیومنت" اعمال میشود
+
+// const section = document.getElementById("section");
+// const div = document.getElementById("div");
+// const btn = document.getElementById("btn");
+
+// section.addEventListener("click", () => {
+//   console.log("Section Clicked");
+// });
+
+// div.addEventListener("click", () => {
+//   console.log("Div Clicked");
+// });
+
+// btn.addEventListener("click", () => {
+//   console.log("Btn Clicked");
+// });
+
+// document.body.addEventListener("click", () => {
+//   console.log("Body Clicked");
+// });
+
+// -------------
+
+// اگر نیاز بود که این اتفاق نیافتد باید از "متود استاپ پروگیشن" بر روی "آبجکت" برگردانده شده توسط "ایونت" استفاده کرد
+
+// btn.addEventListener("click", (e) => {
+
+//   console.log("Btn Clicked");
+//   e.stopPropagation();
+// });
+
+// section.addEventListener("click", () => {
+//   console.log("Section Clicked");
+// });
+
+// div.addEventListener("click", () => {
+//   console.log("Div Clicked");
+// });
+
+// document.body.addEventListener("click", () => {
+//   console.log("Body Clicked");
+// });
+
+// Part 57  -------------------------------------------------------
+
+// Event Delegation
+
