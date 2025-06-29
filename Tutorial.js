@@ -2824,4 +2824,21 @@
 // Part 57  -------------------------------------------------------
 
 // Event Delegation
+// مدیریت رویداد ها
 
+// "دادن "ایونت" با استفاده از "فور ایچ
+// const listItem = document.querySelectorAll("li");
+// listItem.forEach((item) => {
+//   item.addEventListener("click", (e) => {
+//     e.target.style.color = "red";
+//   });
+// });
+
+// "دادن "ایونت" به "پرنت
+// const list = document.querySelector("ul");
+
+// list.addEventListener("click", (e) => {
+//   e.target.style.color = "lime";
+// });
+
+// Part 58  -------------------------------------------------------
