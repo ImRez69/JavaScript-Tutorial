@@ -2842,3 +2842,54 @@
 // });
 
 // Part 58  -------------------------------------------------------
+
+// window Event | onload | load | DOMContentLoaded | window.innerWidth | window.innerHeight | window.scrollX | window.scrollY
+
+// <head>
+//     <!-- <script src="./script.js"></script> --> // اگر فایل اسکریپت در "تگ" "هد" "لود" شود تغییرات "دام" نمیتواند اعمال شود زیرا قبل از خوانده شدن "تگ" ها تغییرات اعمال میشود
+//     <!-- <script defer src="./script.js"></script> --> // مگر اینکه از "اتربیوت" "دیفر" استفاده کنیم تا بعد از خوانده شدن "اچ تی ام ال" "اسکریپت" "لود" شود
+// </head>
+
+// window Event | onload | load | DOMContentLoaded
+
+// window.onload = function () { // ایونت آن لود" که در پس از "لود" شدن اجرا میشود"
+//   document.querySelector("h1").textContent = "hello";
+// };
+
+// window.addEventListener("load", () => { // ایونت لود" که مانند "آن لود" عمل میکند"
+//   document.querySelector("h1").textContent = "hello";
+//   console.log('Page Loaded');
+// });
+
+// window.addEventListener("DOMContentLoaded", () => { // ایونت دام کانتنت لودد" که پس از خوانده شدن "داکیومنت" اجرا میشود که از "آن لود" و "لود" سریعتر اجرا میشود"
+//   document.querySelector("h1").textContent = "hello";
+//   console.log('Dom  Loaded');
+// });
+
+// console.log("Run..."); // سریعتر از "دام کانتنت لودد","آن لود" و "لود" اجرا میشود
+
+// --------------
+
+// window.innerWidth | window.innerHeight
+
+// window.addEventListener("resize", () => { // ایونت ریساز" که بعد از تغییر سایز صفحه اتفاق میوفتد"
+//   console.log(window.innerWidth , window.innerHeight); // عرض داخلی و ارتفاع داخلی مرورگر
+// });
+
+// --------------
+
+// window.scrollX | window.scrollY
+
+// window.addEventListener("scroll", () => { // ایونت اسکرول" که بعد از اسکرول صفحه اتفاق میوفتد"
+//   console.log(window.scrollX,window.scrollY); // اسکرول" افقی و عمودی مرورگر"
+
+//   if(window.scrollY > 70 ){
+//     document.body.style.backgroundColor = "white"
+//     document.body.style.color = "black"
+//   } else{
+//     document.body.style.backgroundColor = "black"
+//     document.body.style.color = "white"
+//   }
+// });
+
+// Part 59  -------------------------------------------------------
