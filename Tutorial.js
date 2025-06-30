@@ -2924,3 +2924,5 @@
 
 // و در زمانی که از ماژول استفاده میکنیم باید در یک سرور و یا "آی پی" باشیم زیرا در "لوکال هاست" در زمان استفاده از ماژول از طرف مرورگر "ارور کراس پرایوسی" میگیریم
 // from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes
+
+// Part 60  -------------------------------------------------------
