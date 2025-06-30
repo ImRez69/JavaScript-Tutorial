@@ -2893,3 +2893,34 @@
 // });
 
 // Part 59  -------------------------------------------------------
+
+// module | export & import
+// ما میتوانیم در فایل های "اسکریپت" از دو کلمه کلیدی به نام
+// اکسپورت" ( تابع و یا متغیر مد نظر را از فایل خروجی گرفته )"
+// ایمپورت" ( از فایل دیگه ای تابع یا متغیری را وارد کرده ) "
+// استفاده کنیم که بعد استفاده از این و کلمه آن فایل "اسکریپت" به یک ماژول تبدیل میشود
+
+// in script.js
+// export const firstName = "Alireza";
+
+// Hint
+// و در زمانی که ماژول داشته باشیم باید در "اچ تی ام ال" در جایی که فایل "اسکریپت" که ماژول است را "لینک" شده است "تایپ" آن را برابر با ماژول قرار دهیم تا مرورگر متوجه شود و "ارور" ندهد
+// Uncaught SyntaxError: Cannot use import statement outside a module
+// <script src="./script.js" type="module"></script>
+
+// و در زمانی که از ماژول استفاده میکنیم باید در یک سرور و یا "آی پی" باشیم زیرا در "لوکال هاست" در زمان استفاده از ماژول از طرف مرورگر "ارور کراس پرایوسی" میگیریم
+// from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes
+
+// -------
+
+// in app.js
+// import {firstName} from "./script.js"
+// console.log(firstName);
+
+// Hint
+// و در زمانی که ماژول داشته باشیم باید در "اچ تی ام ال" در جایی که فایل "اسکریپت" که ماژول است را "لینک" شده است "تایپ" آن را برابر با ماژول قرار دهیم تا مرورگر متوجه شود و "ارور" ندهد
+// Uncaught SyntaxError: Cannot use import statement outside a module
+// <script src="./app.js" type="module"></script>
+
+// و در زمانی که از ماژول استفاده میکنیم باید در یک سرور و یا "آی پی" باشیم زیرا در "لوکال هاست" در زمان استفاده از ماژول از طرف مرورگر "ارور کراس پرایوسی" میگیریم
+// from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes
