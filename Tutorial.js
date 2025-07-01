@@ -3042,7 +3042,7 @@
 // console.log(localStorage); // Storage {length: 0}
 // console.log(sessionStorage); // Storage {length: 0}
 
-// localStorage.setItem("name", "liam"); // ( ذخیره در "لوکال استوریج" ( مقدار اول "کی" و مقدار دوم "ولیو" آن 
+// localStorage.setItem("name", "liam"); // ( ذخیره در "لوکال استوریج" ( مقدار اول "کی" و مقدار دوم "ولیو" آن
 // console.log(localStorage); // Storage {name: 'liam', length: 1}
 // console.log(localStorage.getItem("name")); // liam ( "دسترسی به مقدار در "لوکال استوریج )
 
@@ -3050,16 +3050,20 @@
 
 // JSON.stringify(); | JSON.parse(localStorage.getItem())
 
+// Array
 // const posts = [" post 1 ", " post 1 "];
-
 // console.log(posts); // (2) [' post 1 ', ' post 1 ']
-// console.log(typeof posts); // object
-
 // console.log(JSON.stringify(posts)); // [" post 1 "," post 1 "] // تبدیل آرایه یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
-// console.log(typeof JSON.stringify(posts)); // string
-
 // localStorage.setItem("posts",JSON.stringify(posts)); // [" post 1 "," post 1 "] // تبدیل "آرایه" یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
 // console.log(JSON.parse(localStorage.getItem("posts"))); // (2) [' post 1 ', ' post 1 '] // ( تبدیل مقدار آرایه که به عنوان "استرینگ" ذخیره شده به آرایه )
 
-// Part 64  -------------------------------------------------------
+// ------
 
+// Object
+// const posts = [ { id: 1, name: "post 1"  }, { id: 2, name: "post 2" } ];
+// console.log(posts); // (2) [{…}, {…}]
+// console.log(JSON.stringify(posts)); // [ {"id":1,"name":"post 1"} , {"id":2,"name":"post 2"} ] // تبدیل آرایه یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
+// localStorage.setItem("posts", JSON.stringify(posts)); // [" post 1 "," post 1 "] // تبدیل "آرایه" یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
+// console.log(JSON.parse(localStorage.getItem("posts"))); // (2) [{…}, {…}] // ( "تبدیل مقدار آرایه که به عنوان "استرینگ" ذخیره شده به "آبجکت )
+
+// Part 64  -------------------------------------------------------
