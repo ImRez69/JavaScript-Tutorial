@@ -3032,10 +3032,10 @@
 // فضای ذخیره سازی هر وبسایت متفاوت است
 // مقدار را فقط میتوان به عنوان "اسرتینگ" ذخیره سازی کرد
 
-// Part 63  -------------------------------------------------------
+// Part 63 & 64  -------------------------------------------------------
 
 // localStorage & sessionStroge Method
-// localStorage.setItem( " "," " ) | localStorage.getItem( " "," " )  | JSON.stringify(); | JSON.parse(localStorage.getItem(' '))
+// localStorage.setItem( " "," " ); | localStorage.getItem( " "," " );  | JSON.stringify(); | JSON.parse(localStorage.getItem( " " )); | localStorage.removeItem( " " ); | localStorage.clear();
 
 // localStorage.setItem() | localStorage.getItem()
 
@@ -3048,7 +3048,7 @@
 
 // -----------
 
-// JSON.stringify(); | JSON.parse(localStorage.getItem())
+// JSON.stringify(); | JSON.parse(localStorage.getItem());
 
 // Array
 // const posts = [" post 1 ", " post 1 "];
@@ -3066,4 +3066,15 @@
 // localStorage.setItem("posts", JSON.stringify(posts)); // [" post 1 "," post 1 "] // تبدیل "آرایه" یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
 // console.log(JSON.parse(localStorage.getItem("posts"))); // (2) [{…}, {…}] // ( "تبدیل مقدار آرایه که به عنوان "استرینگ" ذخیره شده به "آبجکت )
 
-// Part 64  -------------------------------------------------------
+// ------
+
+// localStorage.removeItem(); | localStorage.clear();
+
+// localStorage.removeItem()
+// localStorage.removeItem("name"); // فقط یک مقدار میگیرد و آن "کی" را همراه با "ولیو" حذف میکند
+// console.log(localStorage.getItem("name")); // null ( اگر "کی" مد نطر وجود نداشته باشد و یا حذف شده باشد "نال" را بر میگرداند )
+
+// localStorage.clear()
+// localStorage.clear(); // مقداری نمیگیرد چون کل حافظه را پاک میکند
+
+// Part 65  -------------------------------------------------------
