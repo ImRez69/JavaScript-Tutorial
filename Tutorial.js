@@ -2892,7 +2892,7 @@
 //   }
 // });
 
-// Part 59  -------------------------------------------------------
+// Part 59 &  60  -------------------------------------------------------
 
 // module | export & import
 // ما میتوانیم در فایل های "اسکریپت" از دو کلمه کلیدی به نام
@@ -2925,9 +2925,10 @@
 // و در زمانی که از ماژول استفاده میکنیم باید در یک سرور و یا "آی پی" باشیم زیرا در "لوکال هاست" در زمان استفاده از ماژول از طرف مرورگر "ارور کراس پرایوسی" میگیریم
 // from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes
 
-// Part 60  -------------------------------------------------------
+// ----------------------
 
 // Item Can Export | variable | function | arrow function | array | object | export all item in one line | export { firstName, lastName, random, arr, obj };
+// Can Export Every Variable & Function
 
 // variable
 // export const firstName = "ali";
@@ -2981,3 +2982,41 @@
 // export { firstName, lastName, random, arr, obj };
 
 // Part 61  -------------------------------------------------------
+
+// as | import * as | default
+
+// in script.js
+// const firstName = "ali";
+// export { firstName as userName, lastName, random, arr, obj }; // ( میتوانیم از کلمه "از" استفاده کنیم و نام دیگری را برای متغیر یا تابع خروجی در نظر بگیریم ( تا اگر نیاز شد بتوانیم از نام قبلی متغیر در ماژولی که بهش ایمپورت شده استفاده کنیم
+
+// in app.js
+// import { userName } from "./script.js"; // و موقع "ایمپورت" با نامی که تغییر دادیم آن را "ایمپورت" میکنیم
+// console.log(userName); // ali
+
+// ----------
+
+// import * as
+
+// in script.js
+// export { firstName, lastName, random, arr, obj }; // میتوانیم از کلمه "از" استفاده کنیم و نام دیگری را برای متغیر یا تابع خروجی در نظر بگیریم
+
+// in app.js
+// import * as app from "./script.js"; // تمامی متغیر ها و تابع هایی که در فایل مربوطه خروجی گرفته شده را "ایمپورت" میکند و درون متغیری که نامش را بعد از "از" نوشتیم به عنوان یک لیست از ماژول ذخیره میکند ( مانند آبجکت میماند و میتوان با . به مقادیر مد نطر دسترسی داشت )
+// console.log(app); // Module {…} , arr: (...) , firstName: (...) , obj: (...) , random: (...) , userName: (...)
+// console.log(app.firstName); // ali
+
+// ----------
+
+// default
+
+// in script.js
+// const firstName = "laim";
+// export default firstName; // با استفاده از "اکسپورت دیفالت" که بعد از تعریف شدن متغیر نوشته میشود فقط میتوان یک متغیر و یا تابع را خروجی گرفت
+
+// in app.js
+// import firstName  from "./script.js"; // و موقع "ایمپورت" کردن متغیر یا تابعی که با "اکسپورت دیفالت" خروجی گرفتم نیازی به گذاشتن آکولاد نیست
+// console.log(firstName); // liam
+
+// Part 62  -------------------------------------------------------
+
+// local storage
