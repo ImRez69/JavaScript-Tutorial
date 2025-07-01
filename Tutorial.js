@@ -3019,7 +3019,7 @@
 
 // Part 62  -------------------------------------------------------
 
-// localStorage & sessionStroge
+// localStorage & sessionStorage
 
 // localStorage
 // لوکال استوریج" برای ذخیره سازی اطلاعاتی مانند تم انتخاب شده کاربر , نام کاربری , عکس پروفایل , و... استفاده میشود که برای همیشه باقی میماند"
@@ -3028,8 +3028,38 @@
 // سشن استوریج" دقیقا مانند "لوکال استوریج" هست اما برای همیشه باقی میماند نمیماند و بعد از بسته شدن صفحه اطلاعات حذف میشوند"
 
 // اطلاعات بصورت استرینگ ذخیره میشوند
-// اطلاعات حساس مانند پسورد یا غیره را نباید در اینجا ذخیره کنیم 
+// اطلاعات حساس مانند پسورد یا غیره را نباید در اینجا ذخیره کنیم
 // فضای ذخیره سازی هر وبسایت متفاوت است
+// مقدار را فقط میتوان به عنوان "اسرتینگ" ذخیره سازی کرد
 
 // Part 63  -------------------------------------------------------
+
+// localStorage & sessionStroge Method
+// localStorage.setItem( " "," " ) | localStorage.getItem( " "," " )  | JSON.stringify(); | JSON.parse(localStorage.getItem(' '))
+
+// localStorage.setItem() | localStorage.getItem()
+
+// console.log(localStorage); // Storage {length: 0}
+// console.log(sessionStorage); // Storage {length: 0}
+
+// localStorage.setItem("name", "liam"); // ( ذخیره در "لوکال استوریج" ( مقدار اول "کی" و مقدار دوم "ولیو" آن 
+// console.log(localStorage); // Storage {name: 'liam', length: 1}
+// console.log(localStorage.getItem("name")); // liam ( "دسترسی به مقدار در "لوکال استوریج )
+
+// -----------
+
+// JSON.stringify(); | JSON.parse(localStorage.getItem())
+
+// const posts = [" post 1 ", " post 1 "];
+
+// console.log(posts); // (2) [' post 1 ', ' post 1 ']
+// console.log(typeof posts); // object
+
+// console.log(JSON.stringify(posts)); // [" post 1 "," post 1 "] // تبدیل آرایه یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
+// console.log(typeof JSON.stringify(posts)); // string
+
+// localStorage.setItem("posts",JSON.stringify(posts)); // [" post 1 "," post 1 "] // تبدیل "آرایه" یا "آبجکت" به "استرینگ" زیرا فقط به عنوان "استرینگ" میتوانیم آن را ذخیره کنیم
+// console.log(JSON.parse(localStorage.getItem("posts"))); // (2) [' post 1 ', ' post 1 '] // ( تبدیل مقدار آرایه که به عنوان "استرینگ" ذخیره شده به آرایه )
+
+// Part 64  -------------------------------------------------------
 
