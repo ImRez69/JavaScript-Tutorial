@@ -2926,3 +2926,58 @@
 // from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes
 
 // Part 60  -------------------------------------------------------
+
+// Item Can Export | variable | function | arrow function | array | object | export all item in one line | export { firstName, lastName, random, arr, obj };
+
+// variable
+// export const firstName = "ali";
+
+// variable
+// export const lastName = "mamadi";
+
+// function
+// export function random() {
+//   return Math.ceil(Math.random() * 10);
+// }
+
+// arrow function
+// export const random = () => {
+// return Math.ceil(Math.random() * 10);
+// };
+
+// array
+// export const arr = [1, 2, 3, 4, 5];
+
+// object
+// export const obj = { a: 1, b: 2 };
+
+// ----------
+
+// export all item in one line | export { firstName, lastName, random, arr, obj };
+
+// variable
+// const firstName = "ali";
+
+// variable
+// const lastName = "mamadi";
+
+// function
+// function random() {
+//   return Math.ceil(Math.random() * 10);
+// }
+
+// arrow function
+// const random = () => {
+//   Math.ceil(Math.random() * 10);
+// };
+
+// array
+// const arr = [1, 2, 3, 4, 5];
+
+// object
+// const obj = { a: 1, b: 2 };
+
+// export all
+// export { firstName, lastName, random, arr, obj };
+
+// Part 61  -------------------------------------------------------
